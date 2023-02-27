@@ -9,7 +9,7 @@
                   % Leave it -- and storage does not start without toplevel boot
                   %,communicate
                  ]},
-  {optional_applactions, [communicate]},
+  {optional_applications, [communicate]},
   {mod, { storage_app, []}},
   {env, [ ]}
  ]}.
