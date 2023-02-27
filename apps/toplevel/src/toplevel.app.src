@@ -1,0 +1,12 @@
+{application, toplevel,
+ [
+  {description, "toplevel_app"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [stdlib,kernel,
+                  communicate, storage
+                 ]},
+  {optional_applactions, []},
+  {mod, { toplevel_app, []}},
+  {env, [ ]}
+ ]}.

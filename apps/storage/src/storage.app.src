@@ -1,0 +1,15 @@
+{application, storage,
+ [
+  {description, "storage_app"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [stdlib,kernel
+                  % communicate dependency:
+                  % Remove it -- and toplevel does not start
+                  % Leave it -- and storage does not start without toplevel boot
+                  %,communicate
+                 ]},
+  {optional_applactions, [communicate]},
+  {mod, { storage_app, []}},
+  {env, [ ]}
+ ]}.

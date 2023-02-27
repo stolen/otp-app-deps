@@ -1,0 +1,11 @@
+{application, communicate,
+ [
+  {description, "communicate_app"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [stdlib,kernel
+                 ]},
+  {optional_applactions, []},
+  {mod, { communicate_app, []}},
+  {env, [ ]}
+ ]}.
